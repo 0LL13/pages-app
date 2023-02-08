@@ -1,0 +1,36 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="de-de">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+        <title>Orga Todo-Liste</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container">
+            	<a href="https://rpc-duesseldorf.de" class="logo">RPC</a>
+                <nav class="nav">
+                    <a href="{%url 'home'%}"><i class="bi bi-house-fill"></i> Home</a>
+                </nav>
+                <img src="{% static 'images/rpc_logo.png' %}"
+                     style="float:right;width:10%;height:10%";>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+             {%block content %}
+             {%endblock content%}
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+				<p><a href="http://pagrelo.de/impressum-disclaimer">Impressum</a></p>
+            </div>
+        </footer>
+    </body>
+
+</html>

@@ -1,0 +1,33 @@
+{%extends 'base.html'%}
+
+{%load static %}
+
+
+{%block content%}
+	<section class="feature">
+		<div class="feature-content">
+			<h1>Orga Todo-Listen</h1>
+			<p>Todo-Listen für das RPC-Turnier im Mai '23</p>	
+            <p><br></p>
+            <table style="width:50%;">
+                <tr>
+                    <th colspan="2" align="left">
+                        <a class="btn btn-primary cta">Wähle deine Gruppe</a>
+                    </th>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><a href="{%url 'parken'%}">Parken</a></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><a href="{%url 'verpflegung'%}">Verpflegung</a></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><a href="{%url 'musik'%}">Musik</a></td>
+                </tr>
+            </table>
+        </div>
+	</section>
+{%endblock content%}
